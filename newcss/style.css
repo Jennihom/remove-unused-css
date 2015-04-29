@@ -1,0 +1,1022 @@
+/*** uncss> filename: css/style.css ***/
+
+/**
+ * .sitetype-xxxx
+ *      合作方标识，会根据域名的不同，添加到html的class上
+ *      比如宜搜的为：.sitetype-easou
+ *      可以以此为命名空间，对特定的标签修改样式
+ */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+form,
+h1,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: Helvetica, '黑体', sans-serif;
+  line-height: 1;
+  background-color: #F1F1F1;
+}
+
+/*---------wanglihua-bookhotel------------*/
+
+/*----------wanglihua-bookhotel----------*/
+
+/*---------wanglihua jiage& pingjia--------*/
+
+/*----------wanglihua jiage& pingjia---------*/
+
+input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  border-style: none;
+}
+
+input {
+  outline-style: none;
+}
+
+input[type="text"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}*/
+
+ul,
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #555555;
+}
+
+/*清除浮动*/
+
+.clearfix:after {
+  content: "\0020";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.floatl {
+  float: left;
+}
+
+.floatr {
+  float: right;
+}
+
+.shadow {
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#d9dbdd', Direction=135, Strength=2);
+  /*for ie6,7,8*/
+  -moz-box-shadow: 0px 1px 3px #d9dbdd;
+  /*firefox*/
+  -webkit-box-shadow: 1px 0px 3px #d9dbdd;
+  /*webkit*/
+  box-shadow: 0px 1px 3px #d9dbdd;
+  /*opera或ie9*/
+}
+
+.map_icon_shadow {
+  /*filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=2);*/
+  -moz-box-shadow: 0px 0px 6px -2px #000000;
+  -webkit-box-shadow: 0px 0px 6px -2px #000000;
+  box-shadow: 0px 0px 6px -2px #000000;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#map {
+  height: 100%;
+}
+
+.amap-logo,
+.amap-copyright {
+  display: none !important;
+}
+
+.common_top,
+.common_bottom,
+.common_center,
+.common_content {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.map_all {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+/*公共头部*/
+
+.common_header {
+  height: 45px;
+  background: #f9f9f9;
+  color: #000000;
+  font-size: 1.125rem;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid #a2a2a2;
+  -webkit-box-align: center;
+  display: -webkit-box!important;
+  display: -webkit-flex!important;
+  -webkit-align-items: center;
+}
+
+.common_header .title {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  padding: 0 60px;
+  font-size: 1rem;
+  display: block!important;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+}
+
+.common_header .title > span {
+  display: block;
+}
+
+.common_header .back {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background: url(../img/newnear_05.png?v=20150122) no-repeat 15px center;
+  background-size: 63px 25px;
+  padding-left: 8px;
+}
+
+/*公共头部.end*/
+
+.common_navi {
+  /*z-index: 2;*/
+  position: absolute;
+  width: 100%;
+}
+
+.common_search {
+  position: absolute;
+  top: 52px;
+  width: 100%;
+  background-color: #fafbfb;
+}
+
+.common_search_top {
+  background-color: #fafbfb;
+  width: 100%;
+}
+
+.common_search_box {
+  height: 42px;
+  line-height: 42px;
+  margin: 8px;
+  border: 1px solid #bbbbbb;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.common_search_button {
+  height: 44px;
+  padding: 0px 10px;
+  background-color: #0091ff;
+  color: #ffffff;
+  border: none;
+  display: inline;
+  font-size: 0.9375rem;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.common_search_input {
+  /*display: inline;*/
+  margin-right: 50px;
+}
+
+.common_search_input input {
+  height: 42px;
+  padding-left: 9px;
+  width: 100%;
+}
+
+.common_top,
+.common_bottom {
+  z-index: 10;
+}
+
+.ellipsis_2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/*头部导航栏2014-10-21*/
+
+.common_navi {
+  border-bottom: 1px solid #969797;
+  background-color: #fafbfb;
+  /* display: -webkit-box;  Safari and Chrome 
+    display: flex;*/
+  width: 100%;
+}
+
+.mainnavibar div {
+  /*-webkit-box-flex: 1;
+    flex: 1;*/
+  width: 33.3%;
+  float: left;
+}
+
+.mainnavibar div a {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  margin: 13px 0;
+}
+
+.mainnavibar_border {
+  border-left: 1px solid #bbbbbb;
+}
+
+.mainnavibar div a span {
+  font-size: 0.9375rem;
+}
+
+/*宜搜置顶距离*/
+
+.common_top {
+  top: 0;
+  position: fixed;
+}
+
+/*宜搜置顶距离*/
+
+.common_center {
+  top: 0;
+  bottom: 0;
+}
+
+.common_content {
+  top: 44px;
+  bottom: 0;
+  display: none;
+  z-index: 300;
+}
+
+.common_bottom {
+  bottom: 0;
+}
+
+.common_card {
+  margin: 6px 8px;
+  padding: 10px;
+  box-shadow: 0 1px 2px #DFDFDF;
+}
+
+.common_radius {
+  border-radius: 2px;
+}
+
+#index_tip_opinion {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  right: 0px;
+}
+
+/* ====== add ========= */
+
+.common_dark {
+  background-color: #f4f4f4;
+}
+
+.common_light {
+  background-color: #fff;
+}
+
+/* =========add end ======= */
+
+.icon01_new {
+  padding-left: 22px;
+  background: url(../img/sprite.png?v=1) no-repeat 0px 2px;
+  background-size: 230px 982px;
+  color: #8f9396;
+  height: 23px;
+  line-height: 23px;
+  display: inline-block;
+}
+
+.search_suggestion {
+  display: none;
+  background-color: #fff;
+}
+
+.map_tips {
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #8AC1FF;
+  background-color: #EAF4FF;
+}
+
+.map_tip {
+  color: #0091FF;
+  text-decoration: underline;
+}
+
+.closetip {
+  float: right;
+  width: 34px;
+  height: 34px;
+  background: url(../img/sprite.png?v=1) no-repeat -108px -368px;
+  background-size: 230px 982px;
+  cursor: pointer;
+}
+
+.map_zoom,
+.map_locate {
+  position: absolute;
+  z-index: 200;
+}
+
+.icon02 {
+  background: url(../img/sprite.png?v=1) no-repeat;
+  background-size: 230px 982px;
+  position: absolute;
+  top: 83px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+}
+
+.icon02.iconroadinfo_new {
+  /*margin-top: 170px;*/
+  top: 53px;
+  background-position: -115px 0px;
+  width: 43px;
+  height: 43px;
+}
+
+.map_setting_info {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.map_setting_info ul li {
+  color: #666;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 20px;
+  background: url(../img/map_setting_arrow.png) no-repeat right center;
+  background-size: 10px 12px;
+}
+
+.map_setting_info ul li + li {
+  border-top: 1px solid #ddd;
+}
+
+li span.city {
+  color: #4c90f9;
+}
+
+li span.viewcity {
+  float: right;
+}
+
+.map_locate,
+.map_zoom,
+.map_set {
+  bottom: 20px;
+  /*margin-bottom: 20px;*/
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.map_zoom {
+  bottom: 65px;
+}
+
+.map_locate {
+  display: block;
+  left: 10px;
+  cursor: pointer;
+}
+
+.map_set {
+  position: absolute;
+  right: 10px;
+  background: #fff url(../img/sprite.png?v=1) no-repeat 8px -291px;
+  background-size: 230px 982px;
+  /*border: 1px solid #bbb;*/
+  /*bottom: 40px;*/
+}
+
+.map_locate.icon {
+  background: #fff url(../img/sprite.png?v=1) no-repeat 3px -640px;
+  background-size: 230px 982px;
+}
+
+.map_mapinfo {
+  position: absolute;
+  bottom: 20px;
+  left: 65px;
+  /*margin-bottom: 20px;*/
+  padding-bottom: 13px;
+  padding-left: 4px;
+  width: 65px;
+  height: 20px;
+  background: url(../img/sprite.png?v=1) no-repeat 2px -542px;
+  background-size: 230px 982px;
+  font-size: 0.75em;
+}
+
+.map_zoom {
+  right: 10px;
+  width: 35px;
+  height: 70px;
+}
+
+.map_zoomin,
+.map_zoomout {
+  display: block;
+  height: 35px;
+  background: url(../img/sprite.png?v=1) no-repeat;
+  background-size: 230px 982px;
+  cursor: pointer;
+}
+
+.map_zoomin {
+  background-position: 5px -365px;
+}
+
+.map_zoomin:active {
+  background-position: -30px -368px;
+}
+
+.map_zoomout {
+  background-position: 5px -400px;
+}
+
+.map_zoomout:active {
+  background-position: -30px -398px;
+}
+
+.common_dialog {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+a {
+  display: block;
+}
+
+/*header*/
+
+/*bus*/
+
+/*buslist*/
+
+/*附近的公交站*/
+
+/*-----------------------------------------------bus end---------------------------------------*/
+
+/*food*/
+
+/*2015-01-22 附近*/
+
+/*sina微博*/
+
+/*菜单列表*/
+
+/**************************酒店********************************/
+
+/* 满房按钮 */
+
+/*******************************团购*****************/
+
+/**分页**/
+
+/************************************拨打电话部分************************/
+
+#darken {
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  z-index: 1000;
+}
+
+#phone_numlist {
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0px;
+}
+
+.phoneCall_title {
+  background-color: #ffffff;
+  color: #b4b4b4;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #e0e0e0;
+  /*border-bottom: 1px solid #e0e0e0;*/
+  text-align: center;
+}
+
+.phoneCall_cancel {
+  width: 95%;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  background-color: #999999;
+  color: #ffffff;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+/**********************************************订餐****************************************/
+
+/************菜单入口*************************/
+
+/************************菜单视图******************************************/
+
+/************************通用--图片展示******************************************/
+
+/*************************************电影*************************/
+
+/*****电影选坐********/
+
+/****影片详情*****/
+
+/*poi详情页end*/
+
+/* {{{ 路线规划 start */
+
+.navigation_nav_carSearchBox {
+  background-color: #FFFFFF;
+  padding-top: 10px;
+}
+
+.navigation_nav_passingBtn {
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  position: relative;
+}
+
+.navigation_nav_carSearchBox .navigation_nav_carAddPassing {
+  width: 50px;
+  height: 95px;
+}
+
+.navigation_nav_carSearchBox .navigation_nav_carAddPassing i {
+  width: 35px;
+  height: 65px;
+  position: absolute;
+  top: -36px;
+  left: -10px;
+  background: url(../img/navigation_index_searchBox_addPass.png) no-repeat 1px;
+  background-size: 24px 20px;
+}
+
+.navigation_nav_carSearchBoxFileset {
+  margin: 0 50px;
+}
+
+.navigation_nav_carSearchBoxInput {
+  position: relative;
+}
+
+.navigation_nav_carSearchBoxInput input {
+  height: 45px;
+  width: 95%;
+  font-family: 'SimHei';
+  color: #007aff;
+  outline: none;
+  border: 0 none;
+  border-radius: 0;
+  border-bottom: 1px solid #C8C8C8;
+  text-indent: 0.5em;
+  padding-right: 20px;
+}
+
+.navigation_nav_carSearchBoxInput input + .icon-close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  right: 4px;
+  display: block;
+  background: url(/img/sprite.png?v=1) no-repeat -105px -288px;
+  background-size: 230px 982px;
+  padding: 10px;
+}
+
+.navigation_nav_carSearchBoxInput input + .icon-close.hidden {
+  display: none;
+}
+
+.navigation_nav_carSearchBoxInput:last-child input {
+  border: 0 none;
+}
+
+.navigation_nav_carSearchBoxInput:nth-child(2) input {
+  display: none;
+}
+
+.navigation_nav_carSearchBox .navigation_nav_switchStartEnd {
+  width: 50px;
+  height: 95px;
+  background: url(../img/navigation_index_searchBox_switch.png) no-repeat center;
+  background-size: 23px 18px;
+}
+
+/*路线规划起始点*/
+
+/* {{{ 路线规划驾车头部 */
+
+/* 路线规划驾车头部 }}} */
+
+/* 路线规划 end }}} */
+
+/*酒店预订日期查询*/
+
+/*
+    Stylesheet for Tigra Calendar v5.0
+    Product is Public Domain (Free for any kind of applicaiton, customization and derivative works are allowed)
+    URL: http://www.softcomplex.com/products/tigra_calendar/
+
+    - all image paths are relative to path of stylesheet
+    - the styles below can be moved into the document or in existing stylesheet
+
+*/
+
+/* input box in default state */
+
+/* additional properties for input boxe in activated state, above still applies unless in conflict */
+
+/* container of calendar's pop-up */
+
+/* table containing navigation and current month */
+
+/* table containing week days header and calendar grid */
+
+/*.user_marker{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: -32px;
+    left: -32px;
+    background-image: url(../img/user_marker_05.png);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: -4px -3px;
+}*/
+
+/*.view_filter_filter .filter_item + .filter_item{
+    border-top: 1px solid #DBDBDB;
+}*/
+
+/**************分享**************/
+
+/*****闪屏*********/
+
+/*.go_web{
+    text-align: center;
+    margin-top: 2%;
+    color: #4c90f9;
+}*/
+
+/*.go_web a{
+    text-decoration: underline;
+}*/
+
+/***************/
+
+/*相册展示页面*/
+
+/*{{{ 公交路线 start*/
+
+/*.busline_detail_list li + li > div {
+    border-top: 1px solid #ccc;
+    height: 
+}*/
+
+/*公交路线 end }}}*/
+
+/**************ads***************/
+
+/*--------------wlh修改附近-------------------*/
+
+/*--------------wlh修改附近样式---------------*/
+
+/* {{{ 添加到桌面提示tip */
+
+.addtoscreen_ios_wrapper {
+  position: absolute;
+  z-index: 20;
+  bottom: 14px;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.addtoscreen_ios_wrapper .addtoscreen_content {
+  width: 175px;
+  height: 75px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 15px;
+  left: -87.5px;
+  border-radius: 3px;
+}
+
+.addtoscreen_ios_wrapper .addtoscreen_content:before {
+  content: '\0020';
+  border-color: rgba(0,0,0,0.7) transparent transparent;
+  border-style: solid;
+  border-width: 14px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -28px;
+  left: 72px;
+}
+
+.addtoscreen_content .logo {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-image: url(../img/logo_05.png);
+  background-size: 100% 100%;
+  float: left;
+  margin: 12.5px 7px;
+}
+
+.addtoscreen_content .close {
+  display: block;
+  height: 37px;
+  width: 40px;
+  background-image: url(../img/sprite.png?v=1);
+  background-size: 230px 982px;
+  background-position: 6px -128px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.addtoscreen_content .text.withIcon {
+  margin-top: 9px;
+}
+
+.addtoscreen_content .text {
+  margin-left: 60px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.addtoscreen_ios_wrapper .addtoscreen_content .text span.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+
+/*.addtoscreen_content .close, */
+
+.addtoscreen_content .text span.icon {
+  background: url(../img/sprite.png?v=1) no-repeat 0 -45px;
+  background-size: 230px 982px;
+}
+
+/* 添加到桌面提示tip }}} */
+
+.amap-scalecontrol {
+  left: 70px !important;
+}
+
+/*firefox*/
+
+body:not(:-moz-handler-blocked) .view_filter_tabs {
+  -moz-box-orient: horizontal;
+  border: 1px solid #DDE0E0;
+  display: -moz-box;
+  margin: 0 8px 5px;
+  width: 95%;
+}
+
+body:not(:-moz-handler-blocked) .mainbottombar a {
+  /*-moz-box-flex: 1;*/
+  display: block;
+  float: left;
+  height: 23px;
+  line-height: 23px;
+  margin: 8px 0;
+  text-align: center;
+  width: 24.4%;
+}
+
+/*图片轮播*/
+
+/*出行*/
+
+/* 第三方页面免责声明 */
+
+/* 宜搜 start */
+
+/* 宜搜end */
+
+/** http://m.amap.com/groupbuy/groupbuy_qiang/ */
+
+/** Prerender related **/
+
+/*父子关系样式*/
+
+/*（飞机场）航站楼/候机楼    34
+（飞机场）出发：    43
+（飞机场）到达：    44
+（火车站）进站口：   45
+（火车站）出站口：   46
+门   31
+停车场：    41
+售票处：    42
+默认 de*/
+
+/** Parenet-child poi relation styling */
+
+/** Index download tip */
+
+.index-download-tip {
+  position: absolute;
+  top: 118px;
+  z-index: 2;
+  width: 100%;
+}
+
+/** Search result styling */
+
+/** navigation index styling 
+ * dep .navigation_nav
+ */
+
+.navigation-type-handler {
+  height: 35px;
+  margin: 0;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+
+.navigation-type-handler ul {
+  margin: 0 8px;
+  background-color: #f6f5f6;
+  border: 1px solid #d7d7d7;
+}
+
+.navigation-type-handler ul li {
+  height: 100%;
+  float: left;
+  width: 33%;
+}
+
+.navigation-type-handler ul li + li {
+  border-left: 1px solid #d7d7d7;
+}
+
+.navigation-type-handler li > i {
+  width: 30px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  background-image: url(/img/sprite.png?v=1);
+  background-repeat: no-repeat;
+  background-size: 230px 982px;
+}
+
+.navigation-type-handler .car > i {
+  background-position: -110px -665px;
+}
+
+.navigation-type-handler .bus > i {
+  background-position: -110px -592px;
+}
+
+.navigation-type-handler .walk > i {
+  background-position: -106px -742px;
+}
+
+/** feedback styling */
+
+.common-footer {
+  overflow: hidden;
+  padding: 10px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.common-footer li {
+  text-align: center;
+}
+
+.common-footer li > a {
+  color: #999;
+  margin: 10px 0;
+  border-left: 1px solid #999;
+}
+
+.common-footer li:first-child > a {
+  border-left: 0;
+}
+
+/** flexbox parent and children style */
+
+.display-flexbox {
+  display: -webkit-box;
+  /* 兼容旧的 webkit，Android 2.x */
+  display: -webkit-flex;
+  /* 标准写法 带 webkit 前缀，兼容标准确立之前的 webkit */
+  display: flex;
+  /* 标准写法 最新的 webkit, firefox, msie 可以支持 */
+}
+
+.flexbox-children {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+/*  美食/电影 页面2015-01-30  */
+
+/*箭头*/
+
+/*箭头.end*/
+
+/*.movie_box .list .screen :nth-child(3){background: #adb3c9;color: #ffffff;}*/
